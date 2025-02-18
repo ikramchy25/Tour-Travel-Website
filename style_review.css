@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.rating {
+    background: #000000;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #000000;
+    
+}
+#rating span {
+    color: #1ceb75;
+}
+
+.reviews-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Optional: Add smooth scrolling effect */
+}
+
+.card {
+    margin-right: 20px; /* Add some space between the cards */
+}
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-wrap: nowrap; /* Show only one card per row on mobile */
+        overflow-x: scroll; /* Enable horizontal scrolling on mobile */
+    }
+
+    .card {
+        flex: 0 0 auto; /* Fix the card width to show one card per row on mobile */
+        width: 250px; /* Adjust the width as per your requirement */
+    }
+}
+
+
+
+
+/* Navbar Start */
+#navbar {
+    background: #000000;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: #1ceb75;
+}
+
+.navbar-toggler span {
+    color: #1ceb75;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #1ceb75;
+    color: rgb(0, 0, 0);
+}
+.button-space {
+    margin-bottom: 10px;
+  }
+
+#navbar form button {
+    background: #1ceb75;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Navbar End */
+
+/* footer */
+#footer {
+    width: 100%;
+    margin-top: 0px;
+    height: 35%;
+    text-align: center;
+    background: #088b41;
+}
+
+#footer h1 {
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+}
+
+#footer p {
+    color: white;
+    text-shadow: 0px 0px 1px;
+}
+
+.social-links i {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-links i:hover {
+    background:#1ceb75;
+}
+
+/* footer */
+
+

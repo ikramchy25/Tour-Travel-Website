@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Navbar Start */
+#navbar {
+    background: #000000;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: #1ceb75;
+}
+
+.navbar-toggler span {
+    color: #1ceb75;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #1ceb75;
+    color: rgb(0, 0, 0);
+}
+.button-space {
+    margin-bottom: 10px;
+  }
+
+#navbar form button {
+    background: #1ceb75;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Navbar End */
+
+/* Home Section Start */
+.home {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(./images_gal/12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+
+.home .content p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    -ms-text-kashida-space: 0%;
+    
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+    background: #1ceb75;
+    color: white;
+}
+
+@media (max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width:450px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+
+    .home .content h1 {
+        font-size: 38px;
+    }
+
+    .home .content p {
+        font-size: 13px;
+    }
+}
+
+/* Home Section End */
+
+
+
+
+/* Section contact Start */
+.contact {
+    background: #000000;
+    padding: 50px;
+}
+
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.main-text h1 span {
+    color: #1ceb75;
+}
+
+.contact .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px rgb(255, 255, 255);
+}
+
+.contact .row {
+    margin-top: 30px;
+}
+
+.contact form button {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.contact form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 120px;
+}
+
+.contact .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #1ceb75;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.contact .submit:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .contact {
+        padding: 0;
+    }
+
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+/* Section contact End */
+
+
+
+
+/* footer */
+#footer {
+    width: 100%;
+    margin-top: 0px;
+    height: 35%;
+    text-align: center;
+    background: #088b41;
+}
+
+#footer h1 {
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+}
+
+#footer p {
+    color: white;
+    text-shadow: 0px 0px 1px;
+}
+
+.social-links i {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-links i:hover {
+    background:#1ceb75;
+}
+
+/* footer */
+
+

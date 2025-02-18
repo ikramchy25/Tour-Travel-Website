@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+   --black: #222;
+   --white: #fff;
+   --primary: rgb(123, 246, 107);
+   --secondary: rgb(39, 246, 70);
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+}
+
+* {
+   font-family: 'Lato', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html {
+   font-size: 65%;
+   overflow-x: hidden;
+}
+
+section {
+   padding: 5rem 10%;
+}
+
+@keyframes fadeIn {
+   0% {
+      transform: scale(0);
+      opacity: 0;
+   }
+}
+
+
+
+
+
+/* Navbar Start */
+#navbar {
+   background: #000000;
+}
+
+#logo {
+   font-size: 36px;
+   font-weight: 550;
+   color: rgb(255, 255, 255);
+   text-shadow: 0px 1px 1px rgb(255, 255, 255);
+   margin-bottom: 5px;
+}
+
+#logo span {
+   color: #1ceb75;
+}
+
+.navbar-toggler span {
+   color: #1ceb75;
+}
+
+.navbar-nav {
+   margin-left: 20px;
+}
+
+.nav-item .nav-link {
+   font-size: 16px;
+   font-weight: 550;
+   color: rgb(255, 255, 255);
+   letter-spacing: 1px;
+   border-radius: 3px;
+   transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+   background: #1ceb75;
+   color: rgb(0, 0, 0);
+}
+
+.button-space {
+   margin-bottom: 10px;
+}
+
+#navbar form button {
+   background: #1ceb75;
+   color: rgb(0, 0, 0);
+   border: none;
+}
+
+/* Navbar End */
+
+
+
+.heading {
+   background-size: cover !important;
+   background-position: center !important;
+   padding-top: 10rem;
+   padding-bottom: 15rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.heading h1 {
+   font-size: 10rem;
+   text-transform: uppercase;
+   color: var(--white);
+   text-shadow: var(--text-shadow);
+}
+
+
+.heading-title {
+   text-align: center;
+   margin-bottom: 3rem;
+   font-size: 6rem;
+   text-transform: uppercase;
+   color: var(--black);
+}
+
+
+.about {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 3rem;
+   font-size: 60%;
+   background-color: #000000;
+}
+
+.about .image img {
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.about .image img:hover {
+   transform: scale(1.1);
+}
+
+.about .content {
+   flex: 1 1 41rem;
+   text-align: center;
+}
+
+.about .content h3 {
+   font-size: 4rem;
+   color: var(--white);
+}
+
+.about .content p {
+   font-size: 1.5rem;
+   color: var(--white);
+   line-height: 2;
+   padding: 1rem 0;
+   text-align: justify;
+}
+
+.about .content .icons-container {
+   margin-top: 2rem;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   align-items: flex-end;
+}
+
+.about .content .icons-container .icons {
+   background: var(--white);
+   padding: 2rem;
+   flex: 1 1 16rem;
+}
+
+.about .content .icons-container .icons i {
+   font-size: 4rem;
+   margin-bottom: 2rem;
+   color: #1ceb75;
+}
+
+.about .content .icons-container .icons span {
+   font-size: 1.5rem;
+   color: var(--black);
+   display: block;
+}
+
+
+
+.team .member {
+   position: relative;
+   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+   padding: 30px;
+   border-radius: 5px;
+   background-color: #fff;
+}
+
+.team .member .teampic {
+   overflow: hidden;
+   width: 180px;
+   border-radius: 50%;
+}
+
+/* .team .member .teampic img {
+   transition: ease-in-out 0.3s;
+   } */
+
+
+.team .member .member-info {
+   padding-left: 30px;
+}
+
+.team .member h4 {
+   font-weight: 700;
+   margin-bottom: 5px;
+   font-size: 20px;
+   color: #088b41;
+}
+
+.team .member span {
+   display: block;
+   font-size: 15px;
+   padding-bottom: 10px;
+   position: relative;
+   font-weight: 500;
+}
+
+.team .member span::after {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 50px;
+   height: 2px;
+   background: rgb(255, 255, 255);
+   bottom: 0;
+   left: 0;
+}
+
+.team .member p {
+   margin: 10px 0 0 0;
+   font-size: 14px;
+}
+
+.team .member .social {
+   margin-top: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.team .member .social a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 32px;
+   height: 32px;
+   background: #eff2f8;
+}
+
+.team .member .social a i {
+   color: #088b41;
+   font-size: 16px;
+   margin: 0 2px;
+}
+
+.team .member .social a:hover {
+   background: #088b41;
+}
+
+.team .member .social a:hover i {
+   color: #fff;
+}
+
+.team .member .social a+a {
+   margin-left: 8px;
+}
+
+.section-title {
+   text-align: center;
+   padding-bottom: 30px;
+}
+
+.section-title h1 {
+   font-size: 40px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   position: relative;
+   color: #1b9048;
+}
+
+.underline {
+   width: 150px;
+   height: 1px;
+   background-color: rgb(0, 0, 0);
+   margin: auto;
+   margin-top: -30px;
+}
+
+
+/* ----------------team-------------------------- */
+
+
+/* footer */
+#footer {
+   width: 100%;
+   margin-top: 0px;
+   height: 35%;
+   text-align: center;
+   background: #088b41;
+}
+
+#footer h1 {
+   font-size: 400%;
+   color: white;
+   text-shadow: 0px 1px 1px black;
+   padding-top: 30px;
+}
+
+#footer p {
+   font-size: 150%;
+   color: white;
+   text-shadow: 0px 0px 1px;
+}
+
+.social-links i {
+   padding: 10px;
+   border-radius: 5px;
+   font-size: 20px;
+   background: black;
+   color: white;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   transition: 0.5s ease;
+   cursor: pointer;
+}
+
+.social-links i:hover {
+   background: #1ceb75;
+}
+
+/* footer */
+
+
+
+/* media queries  */
+
+@media (max-width:1200px) {
+
+   section {
+      padding: 3rem 5%;
+   }
+
+}
+
+@media (max-width:991px) {
+
+   html {
+      font-size: 60%;
+   }
+
+   section {
+      padding: 3rem 2rem;
+   }
+
+}
+
+@media (max-width:768px) {
+
+   .heading h1 {
+      font-size: 4rem;
+   }
+
+}
+
+@media (max-width:450px) {
+
+   html {
+      font-size: 50%;
+   }
+
+   .heading-title {
+      font-size: 3.5rem;
+   }
+
+
+}

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Navbar Start */
+#navbar {
+    background: #000000;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: #1ceb75;
+}
+
+.navbar-toggler span {
+    color: #1ceb75;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #1ceb75;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Navbar End */
+
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 120vh;
+    background-image: url(./images_gal/14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85%;
+}
+.home .main-text{
+    text-align: center;
+    font-weight: 500;
+    padding: 70px 10% 10px;
+}
+.main-text h3{
+    font-size: 50px;
+    color: #f4f5fb;
+    text-shadow: 0px 0px 1px black;
+}
+.home .main-text p{
+    color: #f4f5fb;
+    margin-top: 5px;
+}
+
+@media (max-width:1300px){
+    .main-text{
+        padding: 200px 10% 10px;
+    }
+}
+@media (max-width:920px){
+    .home .main-text h3{
+        font-size: 40px;
+    }
+}
+@media (max-width:500px){
+    .home .main-text h3{
+        font-size: 30px;
+    }
+}
+/* Home Section End */
+
+
+.card{
+    background-color: #ffffff;
+    padding:20px;
+    margin: 10px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 8px 5px 5px #d0ffbf;
+}
+

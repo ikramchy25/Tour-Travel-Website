@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Other CSS styles... */
+
+/* Navbar Start */
+#navbar {
+    background: #000000;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: #1ceb75;
+}
+
+.navbar-toggler span {
+    color: #1ceb75;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #1ceb75;
+    color: rgb(0, 0, 0);
+}
+.button-space {
+    margin-bottom: 10px;
+  }
+
+#navbar form button {
+    background: #1ceb75;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+/* Navbar End */
+
+
+
+
+/* Home Section Start */
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: #1ceb75;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Sajek Valley";
+    }
+
+    10% {
+        content: "Sylhet";
+    }
+
+    20% {
+        content: "Cox's Bazar";
+    }
+
+    30% {
+        content: "Sundarbans";
+    }
+
+    40% {
+        content: "Srimagal";
+    }
+
+    50% {
+        content: "Rangamati";
+    }
+
+    60% {
+        content: "Bisanakandi";
+    }
+
+    70% {
+        content: "Jaflong";
+    }
+
+    80% {
+        content: "Ratatgul";
+    }
+
+    90% {
+        content: "Lalakhal";
+    }
+
+    100% {
+        content: "Dhaka";
+    }
+}
+
+.home .content p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+    background: #1ceb75;
+    color: white;
+}
+
+@media (max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width:450px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+
+    .home .content h1 {
+        font-size: 38px;
+    }
+
+    .home .content p {
+        font-size: 13px;
+    }
+}
+
+/* Home Section End */
+
+
+/* Section Services Start */
+
+.services {
+    background: #000000;
+    margin-top: 0px;
+    padding: 50px;
+}
+
+.services .card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: none;
+    background-color: #1ceb75;
+    cursor: pointer;
+}
+
+.services .card i {
+    font-size: 80px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.services .card .card-body h3 {
+    font-weight: 600;
+}
+
+.services .card .card-body {
+    text-align: center;
+}
+
+.services .card:hover{
+    background: #8dffbe;
+ }
+
+#services span {
+    color: #1ceb75;
+}
+
+/* Section Services End */
+
+
+
+/* About Start */
+.about {
+    padding: 50px;
+    margin-top: 0px;
+    background: #000000;
+}
+
+.about .card {
+    border-radius: 10px;
+}
+
+.about .card img {
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-weight: 500;
+}
+
+#about-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #1ceb75;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .about {
+        padding: 0;
+    }
+}
+
+#about span {
+    color: #1ceb75;
+}
+
+/* About End */
+
+
+
+/* footer */
+#footer {
+    width: 100%;
+    margin-top: 0px;
+    height: 35%;
+    text-align: center;
+    background: #088b41;
+}
+
+#footer h1 {
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+}
+
+#footer p {
+    color: white;
+    text-shadow: 0px 0px 1px;
+}
+
+.social-links i {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-links i:hover {
+    background:#1ceb75;
+}
+
+/* footer */
+
+
+.rating {
+    background: #000000;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #000000;
+  }
+  
+  #rating span {
+    color: #1ceb75;
+  }
+  
+  .reviews-container {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .card {
+    margin-right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .reviews-container {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+    }
+  
+    .card {
+      flex: 0 0 auto;
+      width: 250px;
+    }
+  }
+
+
+
